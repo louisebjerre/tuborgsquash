@@ -1,0 +1,318 @@
+/* GENERELLE REGLER */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Regler for alt inde i body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    color: white;
+    background-color: orange;
+}
+
+p{
+    font-weight: lighter;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 120pt;
+}
+
+h2{
+    font-size: 30pt;
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 400;
+}
+/*---------------------------------------------*/
+
+/* HER STYLES HEADER */
+header nav{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    font-weight: bold;
+}
+
+#logo{
+    padding-left: 20px;
+    padding-right: 250px;
+}
+
+#social-header{
+    padding-right: 20px;
+}
+
+nav a {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.868);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.dropdown-content a {
+    display:block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    padding: 10px 20px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*---------------------------------------------*/
+
+/* BURGERMENU */
+
+/* logo rettes på mobil */
+#burger {
+    display: none;
+    padding: 30px;
+    align-items: center;
+    background-color: orange;
+}
+#burger i {
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    position: relative;
+    bottom: 2px;
+}
+#mobil-logo img {
+    width: 300px;
+}
+
+/*---------------------------------------------*/
+
+/* HER STYLES BODY*/
+
+
+/* Forside - Hero billede*/
+
+#hero{
+    background-image: url(images/hero2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+/* Her styles præsentationssektionen*/
+
+#præsentation{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+#blad1{
+    position: absolute;
+    right: 0px;
+}
+
+#blad2{
+    position: absolute;
+    left: 0px;
+    background-color: orange;
+}
+
+
+
+/* Her styles historiesektionen*/
+
+#linje{
+    display: flex;
+    justify-content: center;
+    font-size: 30pt;
+    padding-top: 50px;
+
+}
+
+#linje hr {
+    border: 3px white;
+    border-style: dashed hidden hidden;
+    width: 42%;
+    padding-top: 90px;
+    margin-top: 15px;
+}
+
+
+#historie{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+    gap: 200px;
+}
+
+#overskrift{
+    text-align: center;
+    padding-top: 100px;
+}
+
+#overskrift h1{
+    font-size: 90pt;
+    padding-top: 50px;
+}
+
+
+#konkurrenceforside {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#konkurrenceforside a {
+    text-decoration: none;
+    background-color: #29532A;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#instagram {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#instagram h3{
+    margin: 20px;
+    padding-top: 50px;
+}
+
+#instagram a {
+    margin: 20px;
+}
+
+
+
+
+/* Forhandler side*/
+#forhandler{
+    text-align: center;
+    margin: 20px;
+}
+
+#logoforhandlere{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+
+/*---------------------------------------------*/
+
+/* HER STYLES FOOTER*/
+
+hr {
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    color: white;
+    font-size: 10pt;
+    height: 100px;
+    align-items: center;
+}
+
+/* ikoner */
+.fa-brands {
+    font-size: 25pt;
+}
+.fa-square-facebook {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* BREAKPOINT V. 1050 PX */
+
+@media screen and (max-width: 1050px) {
+    /* BURGER */
+
+    /* Her vises burger menu */
+    #burger {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        align-items: center;
+    }
+    /* Logo placeres i midten */
+    #mobil-logo {
+        margin: auto;
+    }
+    /* Resten af nav skjules */
+   header nav{
+    display: none;
+   }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* BREAKPOINT V. 750PX */
+
+@media screen and (max-width: 750px) {
+
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* BREAKPOINT V. 500PX */
+
+@media screen and (max-width: 500px) {
+
+    /* BURGER */
+    
+    /* logo gøres mindre og rykkes lidt ned */
+    #mobil-logo img {
+        width: 230px;
+    }
+
+
+ 
+
+
+}
