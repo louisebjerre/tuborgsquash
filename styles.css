@@ -324,6 +324,7 @@ nav a:hover {
     justify-content: space-around;
     align-items: center;
     margin: 50px;
+    height: 470px;
 }
 
 .ingredienser p {
